@@ -1,0 +1,6 @@
+{
+  "indices": "{% for index in config.bucket.snapshot.indices %}{{ index }}{% if not loop.last %},{% endif %}{% endfor %}",
+  "ignore_unavailable": true,
+  "include_global_state": false,
+  "partial": true
+}

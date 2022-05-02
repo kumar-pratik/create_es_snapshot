@@ -1,0 +1,11 @@
+---
+config:
+  url: "localhost:9200"
+  repository: "es_s3_backup"
+  bucket:
+    s3: "es_backup_bucket"
+    region: "us-east-1"
+    snapshot:
+      indices:
+        - test-index-1
+        - test-index-2
